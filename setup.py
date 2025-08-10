@@ -8,7 +8,7 @@ def get_requrements(file_path:str)->List[str]:
         requirements=[req.replace("\n"," ") for req in requirements]
         if HYPRN_E_DOT in requirements:
             requirements.remove(HYPRN_E_DOT)
-    return
+    return requirements
 setup(
     name='mlproject',
     version='0.0.1',
